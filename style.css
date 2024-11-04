@@ -125,9 +125,9 @@ body {
 .footer-grid .footer-information a {
     text-decoration: none;
     color:white;
-    size: 1em;
+    font-size: 1.3em;
     font-family: "Crimson Text", serif;
-    margin-bottom: 1%;
+    margin-bottom: 8%;
     padding-bottom: 0;
     transition: color 0.3s ease;
 }
@@ -138,10 +138,9 @@ body {
 
  .footer-grid .footer-copy {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
-    margin-bottom: 15px;
 }
 
 .footer-grid .footer-copy p {
@@ -171,7 +170,7 @@ body {
 
 #footer .footer-grid .contact-socialmedia .fa {
     color:white;
-    margin-left: 1em;
+    margin: 1.2em;
     transition: color 0.3s ease;
 }
 
@@ -386,10 +385,24 @@ body {
     justify-content: center;
     align-items: top;
 }
+
+#characters-page-main h1 {
+    font-family: 'Shrikhand', serif;
+    color: white;
+    margin-top: 50px;
+    font-size: 5em;
+}
 .main-characters-container .character-picture {
-    height: 700px;
+    height: 600px;
     width: 25%;
-    
+    text-align: center;
+}
+
+.main-characters-container .character-picture p{
+    font-family: 'Shrikhand', serif;
+    color: white;
+    margin-top: 10px;
+    font-size: 2em;
 }
 
 .main-characters-container .character-picture img{
@@ -498,6 +511,7 @@ body {
     font-optical-sizing: auto;
     font-size:xx-large;
     font-style: normal;
+    text-align: left;
 }
 
 .phrases-container {
@@ -679,8 +693,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 50px 8%;
     background-color: #f8ceee;
+}
+
+.container-carrie-style h1 {
+    font-family: 'Shrikhand', serif;
+    font-size: 6em;
+    color: #ffffff;
+    margin-top: 50px;
 }
 
 .gallery {
@@ -695,9 +717,241 @@ body {
     filter: drop-shadow(0 0 8px rgb(0, 0, 0));
 }
 
+/* QUIZ PAGE */
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Shrikhand', serif;
+    background-color: #FF66C4;
+    min-height: 100%;
+    height: 100vh;
+    padding-top: 100px;
+  }
+  
+ #quiz-container button {
+    padding: 10px 20px;
+    font-size: 2em;
+    border: none;
+    background-color: #ffffff;
+    color: #FF66C4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease; 
+  }
+
+  #quiz-container button:hover {
+    background-color: #FF66C4;
+    color: #ffffff;
+  }
+
+  #quiz-container h1 {
+    font-size: 6em;
+  }
+
+  #question-container {
+    height: 100vh;
+  }
+  #question-container h2 {
+    margin: 50px;
+    font-size: 3em;
+    color: #ffffff;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .option {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .option img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s; 
+  }
+
+  .character-name {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .option img:hover {
+    transform: scale(1.1); 
+    border: 4px solid #fc1b8c;
+  }
+  
+  #results-container{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  #results-message {
+    font-size: 4em;
+    color: white;
+    margin: 15px;
+  }
+
+  #results-container img {
+    max-width: 250px;
+    filter: drop-shadow(0 0 7px rgb(255, 255, 255))
+  }
+  
+  #results-container #score{
+    font-size: 2.5em;
+  }
+
+  /* INFO PAGE */
+  #info-body{
+    background-color: #fdf6f0;
+  }
+  #main-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #music-container{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #music-player{
+    margin-top: 75px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  #music-player p{
+   font-family: 'Shrikhand', serif; 
+   font-size: 20px;
+   margin-bottom: 0px;
+  }
+
+  #music-button {
+    padding: 5px 17px;
+    font-family: 'Shrikhand', serif; 
+    font-size: 20px;
+    background-color: #FF66C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#music-button:hover {
+    background-color: #fc1b8c;
+}
+
+#satc-description {
+    height: 100%;
+    background-color: #fdf6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+#satc-description h1 {
+    font-family: 'Shrikhand', serif; 
+    font-size: 6em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #fc1b8c ;
+}
+
+#satc-description p {
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(17, 17, 17);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#satc-description p b {
+    color: #fc1b8c;
+}
+
+#satc-description #satc-cover{
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#satc-cover img {
+    width: 100%;              
+    height: 100%;             
+    object-fit: cover;        
+    object-position: top; 
+}
+
+.more-info {
+    margin-bottom: 40px;
+}
+.more-info h2, h3{
+    font-family: 'Shrikhand', serif; 
+    font-size: 3em;
+    color: #ee7cc8;
+}
+
+.more-info ul {
+    list-style: none;
+}
+.more-info ul li {
+    font-family: 'Shrikhand', serif; 
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    color: #eba1d2;
+}
+
+.more-info ul li b {
+    color: #1f1f1f;
+    font-size: 0.8em;
+}
+
 /* Media Queries */
 @media (max-width: 480px) {
 
+    .more-info h2, h3{ 
+        font-size: 2em;
+    }
+
+    .more-info ul li {
+        font-size: 1.7em;
+    }
+    #satc-description h1 {
+        font-size: 3.5em;
+    }
+
+    #satc-description p {
+        font-size: 1.3em;
+    }
 
     #form-fields {
         width: 80vw;
@@ -740,6 +994,7 @@ body {
     #main-banner #main-title {
         font-size: 3.5em;
         margin-bottom: 0;
+        margin-top: 100px;
     }
 
     #main-banner h2{
@@ -752,9 +1007,9 @@ body {
     }
 
     #main-banner #cocktail img{
-        max-height: 200px;
+        max-height: 170px;
         left: 38%;
-        top: 15%;
+        top: 18%;
         margin-bottom: 20px;
         transform: rotate(0deg);
         animation: slide-in 2s ease-out; 
@@ -826,6 +1081,13 @@ body {
         padding: 0.3em 0.5em;
     }
 
+    .container-carrie-style h1 {
+        font-family: 'Shrikhand', serif;
+        font-size: 3em;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+
     /* --- */
 
     .description-container{
@@ -890,5 +1152,62 @@ body {
         margin-top: 10px;
     }
     
+    .options-container {
+        gap: 10px;
+        max-height: 350px;  
+      }
+    
+      #quiz-container h1 {
+        font-size: 3.5em;
+      }
+      
+      #quiz-container button {
+        padding: 10px;
+        font-size: 1em;
+      }
+
+      #question-box {
+        height: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+      }
+      #question-container h2 {
+        font-size: 1.5em;
+      }
+    
+      .option {
+        width: 150px;
+        height: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+  
+      .option img {
+          height: 150px;
+      }
+
+      .character-name {
+          margin-top: 12px;
+          font-size: 1.2em;
+          text-align: center;
+          color: #ffffff;
+        }
+    
+        #results-message {
+            font-size: 2.5em;
+            margin-top: 10px;
+          }
+        
+          #results-container img {
+            max-width: 200px;
+            filter: drop-shadow(0 0 7px rgb(255, 255, 255))
+          }
+          
+          #results-container #score{
+            font-size: 1.5em;
+          }
 
 }
